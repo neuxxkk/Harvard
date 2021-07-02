@@ -1,0 +1,14 @@
+div{
+    padding: 10px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(134, 187, 255);
+}
+
+a:hover{
+    text-decoration: underline;
+    font-size: 103%;
+}

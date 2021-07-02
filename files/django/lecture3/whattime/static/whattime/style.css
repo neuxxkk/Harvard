@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    font-size: larger;
+    font-family: candara;
+}
+
+#morning{
+    background-image: url(https://i.ytimg.com/vi/wuLKvcn-c7A/maxresdefault.jpg);
+    color: black;
+}
+
+#afternoon{
+    background-image: url(https://cdn.wallpapersafari.com/88/30/afIs6k.jpg);
+    color: cornsilk;
+}
