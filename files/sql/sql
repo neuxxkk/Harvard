@@ -1,0 +1,3 @@
+% = wild card (coringa);
+	LIKE "%a%";
+

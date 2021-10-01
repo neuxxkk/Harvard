@@ -6,7 +6,7 @@ def index(request):
     now = datetime.now()
     return render(request, "whattime/index.html", {
         "minute":now.minute,
-        "hour":now.hour,
+        "hour":now.hour-3,
         "day":now.day,
         "month":now.month,
         "year":now.year

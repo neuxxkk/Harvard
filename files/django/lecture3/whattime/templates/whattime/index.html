@@ -8,17 +8,27 @@
         <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/time-1855956-1574162.png" type="image/png">
     </head>
     {% if hour > 12 or hour == 12 and minute > 30 %}
-        <body id="morning">
-            <h1>TIME</h1>
-            Now is:<br>
-            {{hour}}:{{minute}} of {{month}}/{{day}}/{{year}}
-            And right now is morning yet
-    {%else%}
         <body id="afternoon">
             <h1>TIME</h1>
             Now is:<br>
-            {{hour}}:{{minute}} of {{month}}/{{day}}/{{year}}<br>
-            And right now is already afternoon
+            {% if minute > 10 %}
+                {{hour}}:{{minute}} of {{month}}/{{day}}/{{year}}
+                And right now is already afternoon
+            {%else%}
+                {{hour}}:0{{minute}} of {{month}}/{{day}}/{{year}}
+                And right now is already afternoon
+            {%endif%}
+    {%else%}
+        <body id="morning">
+            <h1>TIME</h1>
+            Now is:<br>
+            {% if minute > 10 %}
+                {{hour}}:{{minute}} of {{month}}/{{day}}/{{year}}<br>
+                And right now is morning yet
+            {%else%}
+                {{hour}}:0{{minute}} of {{month}}/{{day}}/{{year}}<br>
+                And right now is morning yet
+            {%endif%}        
     {%endif%}
     </body>
 </html>
