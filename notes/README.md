@@ -1,6 +1,3 @@
-PAROU NA AULA #3 DE ARDUINO /ARDUINOBRASIL
-
-
 # Harvard
 Web Programming
 

@@ -54,3 +54,6 @@ for person in people: #For it person in people ||
         print(f"Added {person} to flight succesfully.")
     else: # = if flight < len(self.passenger)
         print(f"No available seats for {person}")
+
+import time
+time.sleep(5)
